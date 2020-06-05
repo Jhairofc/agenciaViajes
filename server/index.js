@@ -37,7 +37,7 @@ app.use('/', routes());
 
 //Validacion host y puerto cuando se trabaja en entornos de desarrollo y produccion
 const host = process.env.host || '0.0.0.0';
-const port = process.env.port || 3000;
+const port = process.env.port || 5000;
 app.listen(port, host, ()=>{
     console.log('El servidor esta funcionando');    
 });

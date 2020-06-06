@@ -36,8 +36,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use('/', routes());
 
 //Validacion host y puerto cuando se trabaja en entornos de desarrollo y produccion
-const host = process.env.host || '0.0.0.0';
-const port = process.env.port || 3306;
+const host = process.env.HOST || '0.0.0.0';
+const port = process.env.PORT || 3306;
 app.listen(port, host, ()=>{
     console.log('El servidor esta funcionando: '+port);    
 });

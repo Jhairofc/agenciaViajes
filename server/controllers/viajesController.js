@@ -7,7 +7,7 @@ exports.infoViajes = async (req, res)=>{
     });
 };
 exports.infoViaje = async (req, res)=>{
-    const viaje = destino.findByPk(req.params.id)
+    const viaje = await destino.findByPk(req.params.id)
     res.render('viaje', {
         pagina: 'Acerca del Viaje',
         viaje

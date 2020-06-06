@@ -14,5 +14,5 @@ module.exports = new seq(process.env.db_name, process.env.db_user, process.env.d
         acquire: 30000,
         idle: 10000
     },
-    operatorsAliases: 1
+    operatorsAliases: 0
 });
